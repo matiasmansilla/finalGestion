@@ -17,7 +17,7 @@ import modelo.Cliente;
 
 /**
  *
- * @author abel
+ * @author matias
  */
 public class VentanaBuscarArticulo extends javax.swing.JDialog {
 
