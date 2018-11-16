@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="963e0a56-7e19-4a04-8f17-50c7db53d037">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="desde" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="hasta" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     liquidacion.`Id` AS liquidacion_Id,
+     liquidacion.`Fecha` AS liquidacion_Fecha,
+     liquidacion.`Aporte` AS liquidacion_Aporte,
+     liquidacion.`Descuento` AS liquidacion_Descuento,
+     liquidacion.`Neto` AS liquidacion_Neto,
+     empleado.`Dni` AS empleado_Dni,
+     empleado.`Nombre` AS empleado_Nombre,
+     empleado_A.`Dni` AS empleado_A_Dni,
+     empleado_A.`Nombre` AS empleado_A_Nombre,
+     empleado.`Ingreso` AS empleado_Ingreso,
+     empleado.`Sexo` AS empleado_Sexo,
+     categoria.`Basico` AS categoria_Basico,
+     categoria.`Categoria` AS categoria_Categoria
+FROM
+     `empleado` empleado INNER JOIN `liquidacion` liquidacion ON empleado.`Id` = liquidacion.`Empleado_Id`
+     INNER JOIN `empleado` empleado_A ON liquidacion.`Empleado_Id1` = empleado_A.`Id`
+     INNER JOIN `categoria` categoria ON empleado.`Categoria_Id` = categoria.`Id`
+WHERE
+     liquidacion.Fecha >= $P{desde}
+     and liquidacion.Fecha <= $P{hasta}]]>
+	</queryString>
+	<field name="liquidacion_Id" class="java.lang.Integer"/>
+	<field name="liquidacion_Fecha" class="java.sql.Date"/>
+	<field name="liquidacion_Aporte" class="java.lang.Double"/>
+	<field name="liquidacion_Descuento" class="java.lang.Double"/>
+	<field name="liquidacion_Neto" class="java.lang.Double"/>
+	<field name="empleado_Dni" class="java.lang.String"/>
+	<field name="empleado_Nombre" class="java.lang.String"/>
+	<field name="empleado_A_Dni" class="java.lang.String"/>
+	<field name="empleado_A_Nombre" class="java.lang.String"/>
+	<field name="empleado_Ingreso" class="java.sql.Date"/>
+	<field name="empleado_Sexo" class="java.lang.String"/>
+	<field name="categoria_Basico" class="java.lang.Double"/>
+	<field name="categoria_Categoria" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<staticText>
+				<reportElement x="140" y="13" width="325" height="41" uuid="b69cf063-9e56-46e5-9679-e420906b5036"/>
+				<textElement textAlignment="Justified">
+					<font size="18" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Reporte Liquidacion de empleados]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="465" y="72" width="100" height="20" uuid="cd71d8c8-8877-4bb4-89d0-4fde9c888049"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="416" y="72" width="49" height="20" uuid="bca1b870-f644-40ad-aadc-01786f1a525f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="269" height="105" uuid="61745079-2f69-448c-afc9-11ab6223208c"/>
+				<imageExpression><![CDATA["C:\\Users\\abel\\Desktop\\iconos\\liquidacionfinalll.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="37" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="20" forecolor="#000000" backcolor="#999999" uuid="217ddce4-2b52-4aaf-887d-78e42af9744d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="16" height="20" uuid="b2817db9-9c1d-42cb-8e95-56bdc66821b1"/>
+				<text><![CDATA[#]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="0" width="74" height="20" uuid="825f6843-d3f0-4227-9c97-350b6580d0b9"/>
+				<text><![CDATA[Fecha liquidacion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="0" width="76" height="20" uuid="b59ab019-768e-4e3b-aa62-c7e2f3c11e05"/>
+				<text><![CDATA[DNI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="0" width="100" height="20" uuid="043d545e-362a-44d4-818e-4bf3198fef96"/>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="0" width="62" height="20" uuid="6cf899ec-2f07-4158-ada8-5f621b98e118"/>
+				<text><![CDATA[Aporte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="0" width="76" height="20" uuid="013915d1-7633-49f5-b1d5-19d6b213546f"/>
+				<text><![CDATA[Descuento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="494" y="0" width="61" height="20" uuid="60f6de35-bef2-439d-aecc-83cf2ecb7275"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Neto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="265" y="0" width="89" height="20" uuid="b1f37104-05ad-4e2e-ab87-0a29e0e1af5b"/>
+				<text><![CDATA[Categoria]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="48" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="1" width="555" height="20" backcolor="#99FFFF" uuid="2f6cdc7f-979e-4623-bd37-7969fdae55e1"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="16" height="20" uuid="ffe6e9ee-195e-4730-ada0-9872d1e0467a"/>
+				<textFieldExpression><![CDATA[$F{liquidacion_Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="195" y="0" width="74" height="20" uuid="e25a5dca-efc6-496e-803d-64dc1d6a1dc6"/>
+				<textFieldExpression><![CDATA[$F{liquidacion_Fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="17" y="0" width="78" height="20" uuid="e7d0858a-86d3-4d0a-86ad-ec4af03b1751"/>
+				<textFieldExpression><![CDATA[$F{empleado_Dni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="0" width="100" height="20" uuid="07c94775-4595-4eab-8598-5af287d97741"/>
+				<textFieldExpression><![CDATA[$F{empleado_Nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="354" y="0" width="62" height="20" uuid="68eef807-5bea-4cbc-b421-549956ca08a4"/>
+				<textFieldExpression><![CDATA[$F{liquidacion_Aporte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="416" y="0" width="76" height="20" uuid="0f9aa123-0a0e-421c-bd15-223c11c7c430"/>
+				<textFieldExpression><![CDATA[$F{liquidacion_Descuento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="494" y="0" width="61" height="20" uuid="2114c927-5d7a-48ff-abc8-bf1801026275"/>
+				<textFieldExpression><![CDATA[$F{liquidacion_Neto}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="31" width="555" height="1" uuid="05e5779c-4a19-44a5-b4f6-223430ea9538"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="269" y="0" width="85" height="20" uuid="b94fa827-47e6-4ea6-87ef-690f0ce7e041"/>
+				<textFieldExpression><![CDATA[$F{categoria_Categoria}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="25" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="269" y="34" width="37" height="20" uuid="f1896a87-3856-4c25-8b95-4d61d095b8ee"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="265" y="14" width="37" height="20" uuid="0e1f19c9-2e54-4580-8304-3afa6aa5bb88"/>
+				<text><![CDATA[Pagina]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

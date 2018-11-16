@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3fd917dd-135f-4e99-b38e-703ac169211e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     liquidacion.`Id` AS liquidacion_Id,
+     liquidacion.`Mes` AS liquidacion_Mes,
+     liquidacion.`Anio` AS liquidacion_Anio,
+     liquidacion.`Aporte` AS liquidacion_Aporte,
+     liquidacion.`Descuento` AS liquidacion_Descuento,
+     liquidacion.`Neto` AS liquidacion_Neto,
+     liquidacion.`Empleado_Id` AS liquidacion_Empleado_Id,
+     liquidacionlinea.`Cantidad` AS liquidacionlinea_Cantidad,
+     liquidacionlinea.`Valor` AS liquidacionlinea_Valor,
+     liquidacionlinea.`Suma` AS liquidacionlinea_Suma,
+     liquidacionlinea.`Resta` AS liquidacionlinea_Resta,
+     liquidacionlinea.`Concepto_Id` AS liquidacionlinea_Concepto_Id,
+     concepto.`Descripcion` AS concepto_Descripcion,
+     empleado.`Dni` AS empleado_Dni,
+     empleado.`Nombre` AS empleado_Nombre,
+     liquidacionlinea.`Id` AS liquidacionlinea_Id,
+     liquidacion.`Empleado_Id1` AS liquidacion_Empleado_Id1,
+     empleado_A.`Dni` AS empleado_A_Dni,
+     empleado_A.`Nombre` AS empleado_A_Nombre
+FROM
+     `liquidacion` liquidacion INNER JOIN `liquidacionlinea` liquidacionlinea ON liquidacion.`Id` = liquidacionlinea.`Liquidacion_Id`
+     INNER JOIN `concepto` concepto ON liquidacionlinea.`Concepto_Id` = concepto.`Id`
+     INNER JOIN `empleado` empleado ON liquidacion.`Empleado_Id` = empleado.`Id`
+     AND empleado.`Id` = liquidacion.`Empleado_Id`
+     INNER JOIN `empleado` empleado_A ON liquidacion.`Empleado_Id1` = empleado_A.`Id`
+WHERE
+     liquidacion.`Id` = $P{Id}]]>
+	</queryString>
+	<field name="liquidacion_Id" class="java.lang.Integer"/>
+	<field name="liquidacion_Mes" class="java.lang.String"/>
+	<field name="liquidacion_Anio" class="java.lang.String"/>
+	<field name="liquidacion_Aporte" class="java.lang.Double"/>
+	<field name="liquidacion_Descuento" class="java.lang.Double"/>
+	<field name="liquidacion_Neto" class="java.lang.Double"/>
+	<field name="liquidacion_Empleado_Id" class="java.lang.Integer"/>
+	<field name="liquidacionlinea_Cantidad" class="java.lang.Integer"/>
+	<field name="liquidacionlinea_Valor" class="java.lang.Double"/>
+	<field name="liquidacionlinea_Suma" class="java.lang.Double"/>
+	<field name="liquidacionlinea_Resta" class="java.lang.Double"/>
+	<field name="liquidacionlinea_Concepto_Id" class="java.lang.Integer"/>
+	<field name="concepto_Descripcion" class="java.lang.String"/>
+	<field name="empleado_Dni" class="java.lang.String"/>
+	<field name="empleado_Nombre" class="java.lang.String"/>
+	<field name="liquidacionlinea_Id" class="java.lang.Integer"/>
+	<field name="liquidacion_Empleado_Id1" class="java.lang.Integer"/>
+	<field name="empleado_A_Dni" class="java.lang.String"/>
+	<field name="empleado_A_Nombre" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="97" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="97" uuid="13c3c870-6960-4672-ae76-cb4862b56c9c"/>
+				<graphicElement>
+					<pen lineWidth="1.25"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="3" y="0" width="550" height="96" uuid="54d28d12-3062-4f56-a57d-9365905f5b39"/>
+				<imageExpression><![CDATA["C:\\Users\\abel\\Desktop\\iconos\\liqusueldo2.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="153" y="1" width="235" height="35" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="2d163a34-222e-4088-92c2-00462eeccb38"/>
+				<textElement>
+					<font size="18" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Liquidacion de Empleado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="57" width="86" height="20" uuid="5db01fac-846a-4c40-8796-7ddb9a521dab"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° liquidacion:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="504" y="57" width="67" height="20" uuid="37c17176-2a5d-48f5-9723-b7db64e6d2bb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="404" y="77" width="100" height="20" uuid="9bcdafd4-30f0-48db-999a-32d5fea2f97a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha del sistema:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="499" y="77" width="72" height="20" uuid="9b358a13-be19-4ef1-a3b4-f146fe25bd86"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="76" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="2" width="554" height="72" uuid="e717a9a9-babc-404b-9a22-a04b8e32e663"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="28" width="100" height="20" uuid="a0ae25c3-f627-463c-8b37-8c6568f5cc81"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empleado a liquidar:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="53" width="32" height="20" uuid="0cc493b8-20a6-4ebe-b2b9-edf8486f5386"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DNI:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="108" y="28" width="100" height="20" uuid="c78ef504-50ee-4572-a342-3fec61a7fa9a"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empleado_Nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="54" width="100" height="20" uuid="8944cdd3-cfe5-483f-8172-3d2f9069feb1"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empleado_Dni}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="398" y="31" width="41" height="20" uuid="2953ea4a-41c0-4b17-8437-3b8ec00bc787"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[MES:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="398" y="3" width="41" height="20" uuid="f37898b7-8ea2-4152-8d7a-86653b6b7477"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[AÑO:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="32" width="100" height="20" uuid="c7133893-742c-45b3-96c6-4c5222dc33ab"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{liquidacion_Mes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="6" width="100" height="20" uuid="dc53d67e-da97-4b54-82dd-92e4837cbeea"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{liquidacion_Anio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="4" y="4" width="172" height="20" uuid="21b27703-c24f-4801-968c-0589f1224c0b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empleado que realizo liquidacion:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="181" y="6" width="135" height="20" uuid="02868fb4-ce41-4e04-8944-a83f9eeef88e"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empleado_A_Nombre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="0" width="554" height="20" forecolor="#000000" backcolor="#999999" uuid="18f3d692-f911-43e4-8480-c0ea6a88fb73"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="4" y="0" width="37" height="20" uuid="53b72545-924f-4fd8-b701-5310cc6fcc22"/>
+				<text><![CDATA[Cant.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="0" width="156" height="20" uuid="8d8387e8-b411-46d6-88eb-dfdaeaca9cbc"/>
+				<text><![CDATA[Descripcion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="213" y="0" width="100" height="20" uuid="fdbcd3e2-728c-45b0-9201-a1e4157f9a14"/>
+				<text><![CDATA[Valor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="2" width="100" height="20" uuid="63c5282c-3480-4e3f-b355-06b029d67083"/>
+				<text><![CDATA[Haberes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="413" y="2" width="100" height="20" uuid="7e1b9be4-6284-40ba-90af-18f24bc55aaf"/>
+				<text><![CDATA[Descuento]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="0" width="554" height="20" backcolor="#66CCFF" uuid="9669cae4-9487-4af3-87fd-c589f6cfcbcf"/>
+			</rectangle>
+			<textField>
+				<reportElement x="8" y="0" width="27" height="20" uuid="ba3e66fa-c9f1-4904-9be5-8f4e490a31b8"/>
+				<textFieldExpression><![CDATA[$F{liquidacionlinea_Cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="48" y="0" width="160" height="20" uuid="896bd0e4-a589-4d8b-96d0-dc7a124397fa"/>
+				<textFieldExpression><![CDATA[$F{concepto_Descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="318" y="0" width="87" height="20" uuid="11ef3859-96aa-47fc-b4f9-f16825ebbd5d"/>
+				<textFieldExpression><![CDATA[$F{liquidacionlinea_Suma}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="418" y="0" width="100" height="20" uuid="cdd3651e-5b88-408a-9b1f-c63e82d07d67"/>
+				<textFieldExpression><![CDATA[$F{liquidacionlinea_Resta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="0" width="90" height="20" uuid="834734ea-d725-4d93-b0fd-25dfb3c5df80"/>
+				<textFieldExpression><![CDATA[$F{liquidacionlinea_Valor}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="29" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="102" splitType="Stretch">
+			<textField>
+				<reportElement x="228" y="82" width="100" height="20" uuid="07a02272-f194-40b1-ba71-bcc663dddd1f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="398" y="62" width="44" height="20" uuid="5b5893bc-f03d-49b2-b016-e9d7a610868b"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[NETO   $]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="477" y="62" width="84" height="20" forecolor="#009900" uuid="4d11f82d-629a-42ac-8326-4bf1b02c548b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{liquidacion_Neto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="398" y="9" width="63" height="20" uuid="d31966fd-b71d-4e2c-9556-5572958397ef"/>
+				<text><![CDATA[APORTE: $]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="398" y="29" width="76" height="20" uuid="e86c603a-ef41-4554-b94a-a001219ec77a"/>
+				<text><![CDATA[DESCUENTO:$]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="477" y="9" width="73" height="20" uuid="6aaf7f65-0d18-4409-880c-dc80dbbe8488"/>
+				<textFieldExpression><![CDATA[$F{liquidacion_Aporte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="29" width="54" height="20" uuid="d08c39c3-e98d-4149-b2d9-f0b2df8f54d3"/>
+				<textFieldExpression><![CDATA[$F{liquidacion_Descuento}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="398" y="49" width="143" height="1" uuid="656854f8-db5f-46ea-aaa4-56d4dbf17006"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
