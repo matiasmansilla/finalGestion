@@ -24,9 +24,6 @@
                 </BevelBorder>
               </Border>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/engranaje.jpg"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Administrador de Cuentas"/>
             <Property name="borderPainted" type="boolean" value="true"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -69,9 +66,6 @@
                   <Color PropertyName="shadowInner" blue="40" green="40" id="darkGray" palette="1" red="40" type="palette"/>
                 </BevelBorder>
               </Border>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/+.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Gestion"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -152,9 +146,6 @@
                 </BevelBorder>
               </Border>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/carrito.jpg"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Movimiento"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="14" style="0"/>
@@ -193,9 +184,6 @@
                   <Color PropertyName="shadowInner" blue="40" green="40" id="darkGray" palette="1" red="40" type="palette"/>
                 </BevelBorder>
               </Border>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/$.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Liquidacion"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -243,9 +231,6 @@
                   <Color PropertyName="shadowInner" blue="40" green="40" id="darkGray" palette="1" red="40" type="palette"/>
                 </BevelBorder>
               </Border>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/impresoraaa.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Reportes"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -301,9 +286,6 @@
                   <Color PropertyName="shadowInner" blue="40" green="40" id="darkGray" palette="1" red="40" type="palette"/>
                 </BevelBorder>
               </Border>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/sistema.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Sistema"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -374,11 +356,6 @@
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagenes/Descargar pack fondos abstractos  (222).jpg"/>
-        </Property>
-      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="0" y="0" width="950" height="480"/>

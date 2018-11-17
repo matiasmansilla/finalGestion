@@ -179,14 +179,13 @@ public class VentanaCompra extends javax.swing.JDialog {
         });
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 30, 70, 60));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/if_Add_131846.png"))); // NOI18N
         jButton3.setText("Agregar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(494, 112, -1, -1));
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(494, 112, 140, 47));
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Datos del Proveedor", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
@@ -238,7 +237,7 @@ public class VentanaCompra extends javax.swing.JDialog {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 140, 47));
+        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 140, 47));
 
         jButton5.setText("Borrar Linea");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -246,7 +245,7 @@ public class VentanaCompra extends javax.swing.JDialog {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 71, 140, 47));
+        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 140, 47));
 
         jButton6.setText("Guardar ");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -254,7 +253,7 @@ public class VentanaCompra extends javax.swing.JDialog {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 123, 140, 47));
+        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 140, 47));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -265,10 +264,10 @@ public class VentanaCompra extends javax.swing.JDialog {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 630, Short.MAX_VALUE)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
+                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 202, Short.MAX_VALUE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)

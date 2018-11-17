@@ -87,15 +87,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         setBackground(new java.awt.Color(204, 204, 255));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Descargar pack fondos abstractos  (222).jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, 480));
 
         jMenuBar1.setBackground(new java.awt.Color(204, 204, 204));
 
         menucuentas.setBackground(new java.awt.Color(204, 204, 204));
         menucuentas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray));
-        menucuentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/engranaje.jpg"))); // NOI18N
         menucuentas.setText("Administrador de Cuentas");
         menucuentas.setBorderPainted(true);
         menucuentas.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -121,7 +118,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(menucuentas);
 
         menugestion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray));
-        menugestion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/+.jpg"))); // NOI18N
         menugestion.setText("Gestion");
         menugestion.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
@@ -185,7 +181,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(menugestion);
 
         menumovimiento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray));
-        menumovimiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/carrito.jpg"))); // NOI18N
         menumovimiento.setText("Movimiento");
         menumovimiento.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
@@ -209,7 +204,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(menumovimiento);
 
         menuliquidacion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray));
-        menuliquidacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/$.jpg"))); // NOI18N
         menuliquidacion.setText("Liquidacion");
         menuliquidacion.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
@@ -241,7 +235,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(menuliquidacion);
 
         menureportes.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray));
-        menureportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/impresoraaa.jpg"))); // NOI18N
         menureportes.setText("Reportes");
         menureportes.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
@@ -281,7 +274,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(menureportes);
 
         jMenu2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.darkGray));
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/sistema.jpg"))); // NOI18N
         jMenu2.setText("Sistema");
         jMenu2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
