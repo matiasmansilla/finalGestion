@@ -53,7 +53,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+          <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -112,10 +112,9 @@
                                   <Component id="radiofemenino" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtdni" max="32767" attributes="0"/>
+                                  <Component id="txtdni" pref="145" max="32767" attributes="0"/>
                                   <Component id="txttelefono" max="32767" attributes="0"/>
                                   <Component id="txtmail" max="32767" attributes="0"/>
-                                  <Component id="date" alignment="0" pref="145" max="32767" attributes="0"/>
                               </Group>
                               <Component id="txtnombre" min="-2" pref="195" max="-2" attributes="0"/>
                           </Group>
@@ -127,15 +126,15 @@
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                  <Component id="botoncancelar" min="-2" pref="130" max="-2" attributes="0"/>
+                  <Component id="botoncancelar" min="-2" pref="140" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="botonsalir" min="-2" pref="122" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                  <Component id="botonsalir" min="-2" pref="140" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" pref="635" max="-2" attributes="0"/>
-                  <EmptySpace pref="35" max="32767" attributes="0"/>
+                  <EmptySpace pref="39" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -164,11 +163,8 @@
                               <Component id="txtmail" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                              <Component id="date" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="radiomasculino" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -208,10 +204,10 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jScrollPane1" min="-2" pref="128" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="botoncancelar" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                      <Component id="botonsalir" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="botoncancelar" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="botonsalir" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -239,7 +235,7 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="botonborrar" max="32767" attributes="0"/>
                           <Component id="botonmodificar" max="32767" attributes="0"/>
-                          <Component id="botonagregar" max="32767" attributes="0"/>
+                          <Component id="botonagregar" pref="140" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="34" max="32767" attributes="0"/>
                   </Group>
@@ -249,7 +245,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Component id="botonagregar" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="botonagregar" min="-2" pref="47" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="botonmodificar" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -262,9 +258,6 @@
           <SubComponents>
             <Component class="javax.swing.JButton" name="botonmodificar">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagenes/modificar.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Modificar"/>
               </Properties>
               <Events>
@@ -273,9 +266,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="botonagregar">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagenes/mas.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Agregar"/>
               </Properties>
               <Events>
@@ -284,9 +274,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="botonborrar">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagenes/Eraser.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Borrar"/>
               </Properties>
               <Events>
@@ -337,8 +324,6 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Ingreso"/>
           </Properties>
-        </Component>
-        <Component class="org.jdesktop.swingx.JXDatePicker" name="date">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
@@ -473,9 +458,6 @@
         </Container>
         <Component class="javax.swing.JButton" name="botoncancelar">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/Cancel.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Cancelar"/>
           </Properties>
           <Events>
@@ -484,9 +466,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="botonsalir">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/Right.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>
           <Events>

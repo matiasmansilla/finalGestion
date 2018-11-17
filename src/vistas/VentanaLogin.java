@@ -62,7 +62,7 @@ public class VentanaLogin extends javax.swing.JDialog {
                 jButton1KeyPressed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 92, 31));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, 140, 47));
 
         jButton2.setText("Salir");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -70,7 +70,7 @@ public class VentanaLogin extends javax.swing.JDialog {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 84, 31));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 140, 47));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 51));
@@ -82,19 +82,17 @@ public class VentanaLogin extends javax.swing.JDialog {
         jLabel1.setText("Usuario");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 70, 20));
 
-        txtusuario.setBackground(new java.awt.Color(117, 183, 251));
+        txtusuario.setBackground(new java.awt.Color(204, 204, 204));
         txtusuario.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txtusuario.setCaretColor(new java.awt.Color(51, 51, 255));
         txtusuario.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         getContentPane().add(txtusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 190, 28));
 
-        txtclave.setBackground(new java.awt.Color(117, 183, 251));
+        txtclave.setBackground(new java.awt.Color(204, 204, 204));
         getContentPane().add(txtclave, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 190, 30));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/loginicon.png"))); // NOI18N
+        jLabel4.setBackground(new java.awt.Color(204, 204, 204));
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 270, 250));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Descargar pack fondos abstractos  (222).jpg"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 430, 260));
 
         pack();

@@ -109,7 +109,7 @@ public class VentanaCompra extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel4.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel4.setBackground(new java.awt.Color(204, 204, 204));
 
         lbltotal.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         lbltotal.setText("Total:");
@@ -177,7 +177,7 @@ public class VentanaCompra extends javax.swing.JDialog {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 30, 70, 44));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 30, 70, 60));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/if_Add_131846.png"))); // NOI18N
         jButton3.setText("Agregar");
@@ -226,38 +226,35 @@ public class VentanaCompra extends javax.swing.JDialog {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 30, -1, 49));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(531, 30, 70, 60));
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 204));
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cancel.png"))); // NOI18N
-        jButton4.setText("Cancelar Compra");
+        jButton4.setText("Cancelar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 170, 47));
+        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 140, 47));
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Clear.png"))); // NOI18N
         jButton5.setText("Borrar Linea");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 71, 170, 39));
+        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 71, 140, 47));
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/if_Save_as_131762.png"))); // NOI18N
-        jButton6.setText("Guardar Compra");
+        jButton6.setText("Guardar ");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 123, 170, 40));
+        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 123, 140, 47));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);

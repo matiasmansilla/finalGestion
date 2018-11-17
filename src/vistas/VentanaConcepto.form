@@ -233,7 +233,7 @@
     <Container class="javax.swing.JPanel" name="jPanel3">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+          <Color blue="cc" green="cc" red="cc" type="rgb"/>
         </Property>
       </Properties>
 
@@ -242,9 +242,9 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                  <Component id="botoncancelar" min="-2" pref="134" max="-2" attributes="0"/>
+                  <Component id="botoncancelar" min="-2" pref="140" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
-                  <Component id="botonsalir" min="-2" pref="124" max="-2" attributes="0"/>
+                  <Component id="botonsalir" min="-2" pref="140" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
@@ -261,8 +261,8 @@
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="160" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="botoncancelar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                      <Component id="botonsalir" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="botoncancelar" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="botonsalir" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
@@ -272,9 +272,6 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="botoncancelar">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/Cancel.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Cancelar"/>
           </Properties>
           <Events>
@@ -283,9 +280,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="botonsalir">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/Right.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>
           <Events>
@@ -310,9 +304,9 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="botonborrar" max="32767" attributes="0"/>
-                          <Component id="botonmodificar" max="32767" attributes="0"/>
-                          <Component id="botonagregar" max="32767" attributes="0"/>
+                          <Component id="botonborrar" pref="140" max="32767" attributes="0"/>
+                          <Component id="botonmodificar" pref="140" max="32767" attributes="0"/>
+                          <Component id="botonagregar" pref="140" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="24" max="32767" attributes="0"/>
                   </Group>
@@ -322,11 +316,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="botonagregar" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="botonagregar" min="-2" pref="47" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="botonmodificar" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="botonmodificar" min="-2" pref="47" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="botonborrar" max="32767" attributes="0"/>
+                      <Component id="botonborrar" pref="47" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -335,9 +329,6 @@
           <SubComponents>
             <Component class="javax.swing.JButton" name="botonagregar">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagenes/mas.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Agregar"/>
               </Properties>
               <Events>
@@ -346,9 +337,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="botonmodificar">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagenes/modificar.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Modificar"/>
               </Properties>
               <Events>
@@ -357,9 +345,6 @@
             </Component>
             <Component class="javax.swing.JButton" name="botonborrar">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagenes/Eraser.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Borrar"/>
               </Properties>
               <Events>
