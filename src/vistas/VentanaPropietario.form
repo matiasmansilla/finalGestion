@@ -97,12 +97,12 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Lemacha Beatriz del Carmen      Legajo:33267"/>
+            <Property name="text" type="java.lang.String" value="Nombre      Legajo"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Almaraz Jesus Abel                    Legajo:35651"/>
+            <Property name="text" type="java.lang.String" value="Nombre                    Legajo"/>
           </Properties>
         </Component>
       </SubComponents>

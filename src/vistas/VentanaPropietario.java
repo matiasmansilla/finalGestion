@@ -39,9 +39,9 @@ public class VentanaPropietario extends javax.swing.JDialog {
 
         jLabel1.setText("Alumnos:");
 
-        jLabel2.setText("Lemacha Beatriz del Carmen      Legajo:33267");
+        jLabel2.setText("Nombre      Legajo");
 
-        jLabel3.setText("Almaraz Jesus Abel                    Legajo:35651");
+        jLabel3.setText("Nombre                    Legajo");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

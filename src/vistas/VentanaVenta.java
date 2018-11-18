@@ -63,26 +63,16 @@ public class VentanaVenta extends javax.swing.JDialog {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        lblnombre = new javax.swing.JLabel();
         lblnombre1 = new javax.swing.JLabel();
-        lbltelefono = new javax.swing.JLabel();
         lblnombre2 = new javax.swing.JLabel();
-        lblmail = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        lbldni = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        lblcuil = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        lblcodigo = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        lblnombrearticulo = new javax.swing.JLabel();
         lblnombrearticulo1 = new javax.swing.JLabel();
-        lbldesccripcion = new javax.swing.JLabel();
         lblnombrearticulo2 = new javax.swing.JLabel();
-        lblprecioventa = new javax.swing.JLabel();
         lblnombrearticulo3 = new javax.swing.JLabel();
-        lblStock = new javax.swing.JLabel();
         lblnombrearticulo4 = new javax.swing.JLabel();
         txtcantidad = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
@@ -90,11 +80,8 @@ public class VentanaVenta extends javax.swing.JDialog {
         jScrollPane1 = new javax.swing.JScrollPane();
         tabla = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
-        lbltotal = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        lbliva = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        lblgrantotal = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jButton4 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
@@ -104,7 +91,7 @@ public class VentanaVenta extends javax.swing.JDialog {
         setBackground(new java.awt.Color(204, 204, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel5.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel5.setBackground(new java.awt.Color(204, 204, 204));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -129,24 +116,11 @@ public class VentanaVenta extends javax.swing.JDialog {
         jLabel2.setText("Nombre:");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 63, -1, -1));
 
-        lblnombre.setBackground(new java.awt.Color(204, 204, 204));
-        lblnombre.setForeground(new java.awt.Color(0, 0, 255));
-        lblnombre.setText("Nombre:");
-        jPanel1.add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 63, -1, -1));
-
         lblnombre1.setText("Telefono:");
         jPanel1.add(lblnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 63, -1, -1));
 
-        lbltelefono.setForeground(new java.awt.Color(0, 0, 255));
-        lbltelefono.setText("Telefono:");
-        jPanel1.add(lbltelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(264, 63, -1, -1));
-
         lblnombre2.setText("E-mail:");
         jPanel1.add(lblnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 95, -1, -1));
-
-        lblmail.setForeground(new java.awt.Color(0, 0, 255));
-        lblmail.setText("E-mail:");
-        jPanel1.add(lblmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 95, -1, -1));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/buscar.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -156,16 +130,8 @@ public class VentanaVenta extends javax.swing.JDialog {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 20, 73, 49));
 
-        lbldni.setForeground(new java.awt.Color(0, 0, 255));
-        lbldni.setText("Dni:");
-        jPanel1.add(lbldni, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 30, -1, -1));
-
         jLabel13.setText("Cuil:");
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, -1, -1));
-
-        lblcuil.setForeground(new java.awt.Color(0, 0, 204));
-        lblcuil.setText("Cuil:");
-        jPanel1.add(lblcuil, new org.netbeans.lib.awtextra.AbsoluteConstraints(239, 30, -1, -1));
 
         jPanel5.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 61, 605, 120));
 
@@ -176,37 +142,17 @@ public class VentanaVenta extends javax.swing.JDialog {
         jLabel3.setText("Codigo de Barra:");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 30, -1, -1));
 
-        lblcodigo.setForeground(new java.awt.Color(0, 0, 255));
-        lblcodigo.setText("Codigo de Barra:");
-        jPanel2.add(lblcodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 30, -1, -1));
-
         jLabel4.setText("Nombre:");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 30, -1, -1));
-
-        lblnombrearticulo.setForeground(new java.awt.Color(0, 0, 255));
-        lblnombrearticulo.setText("Nombre:");
-        jPanel2.add(lblnombrearticulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, -1, -1));
 
         lblnombrearticulo1.setText("Descripcion:");
         jPanel2.add(lblnombrearticulo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 75, -1, -1));
 
-        lbldesccripcion.setForeground(new java.awt.Color(0, 0, 255));
-        lbldesccripcion.setText("Descripcion:");
-        jPanel2.add(lbldesccripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 75, -1, -1));
-
         lblnombrearticulo2.setText("Precio de Venta:");
         jPanel2.add(lblnombrearticulo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 75, -1, -1));
 
-        lblprecioventa.setForeground(new java.awt.Color(0, 0, 255));
-        lblprecioventa.setText("Precio de Venta:");
-        jPanel2.add(lblprecioventa, new org.netbeans.lib.awtextra.AbsoluteConstraints(326, 75, -1, -1));
-
         lblnombrearticulo3.setText("Stock:");
         jPanel2.add(lblnombrearticulo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 110, -1, -1));
-
-        lblStock.setForeground(new java.awt.Color(0, 0, 255));
-        lblStock.setText("Stock:");
-        jPanel2.add(lblStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(114, 110, -1, -1));
 
         lblnombrearticulo4.setText("Cantidad:");
         jPanel2.add(lblnombrearticulo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 110, -1, -1));
@@ -220,7 +166,7 @@ public class VentanaVenta extends javax.swing.JDialog {
         });
         jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 20, 71, 45));
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/if_Add_131846.png"))); // NOI18N
+        jButton7.setBackground(new java.awt.Color(204, 204, 204));
         jButton7.setText(" Agregar");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -250,32 +196,18 @@ public class VentanaVenta extends javax.swing.JDialog {
         jLabel5.setText("Total:");
         jPanel5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, -1, -1));
 
-        lbltotal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lbltotal.setText("Total:");
-        jPanel5.add(lbltotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, -1, -1));
-
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setText("IVA:");
         jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 480, -1, -1));
-
-        lbliva.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lbliva.setText("IVA:");
-        jPanel5.add(lbliva, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 480, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel7.setText("Precio Final:");
         jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 470, -1, -1));
 
-        lblgrantotal.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        lblgrantotal.setForeground(new java.awt.Color(255, 0, 0));
-        lblgrantotal.setText("Precio Final:");
-        jPanel5.add(lblgrantotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 470, -1, -1));
-
         jPanel3.setBackground(new java.awt.Color(204, 204, 204));
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/if_Save_as_131762.png"))); // NOI18N
         jButton4.setText("Guardar Venta");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -284,7 +216,6 @@ public class VentanaVenta extends javax.swing.JDialog {
         });
         jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 162, 170, 50));
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Clear.png"))); // NOI18N
         jButton6.setText("Borrar Linea ");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -293,7 +224,6 @@ public class VentanaVenta extends javax.swing.JDialog {
         });
         jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 89, 170, 46));
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cancel.png"))); // NOI18N
         jButton5.setText("Cancelar Venta");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -478,25 +408,12 @@ public class VentanaVenta extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblStock;
-    private javax.swing.JLabel lblcodigo;
-    private javax.swing.JLabel lblcuil;
-    private javax.swing.JLabel lbldesccripcion;
-    private javax.swing.JLabel lbldni;
-    private javax.swing.JLabel lblgrantotal;
-    private javax.swing.JLabel lbliva;
-    private javax.swing.JLabel lblmail;
-    private javax.swing.JLabel lblnombre;
     private javax.swing.JLabel lblnombre1;
     private javax.swing.JLabel lblnombre2;
-    private javax.swing.JLabel lblnombrearticulo;
     private javax.swing.JLabel lblnombrearticulo1;
     private javax.swing.JLabel lblnombrearticulo2;
     private javax.swing.JLabel lblnombrearticulo3;
     private javax.swing.JLabel lblnombrearticulo4;
-    private javax.swing.JLabel lblprecioventa;
-    private javax.swing.JLabel lbltelefono;
-    private javax.swing.JLabel lbltotal;
     private javax.swing.JTable tabla;
     private javax.swing.JTextField txtcantidad;
     // End of variables declaration//GEN-END:variables
