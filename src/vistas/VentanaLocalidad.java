@@ -77,7 +77,7 @@ public class VentanaLocalidad extends javax.swing.JDialog {
                 txtcodigopostalKeyTyped(evt);
             }
         });
-        getContentPane().add(txtcodigopostal, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 71, 110, -1));
+        getContentPane().add(txtcodigopostal, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 71, 180, -1));
 
         comboprovincia.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
