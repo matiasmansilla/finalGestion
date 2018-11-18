@@ -40,22 +40,13 @@ public class ProyectoCiber {
      */
     public static void main(String[] args) {
         
+        Conexion.conectar();
         
-        try {
-           Class.forName("com.mysql.jdbc.Driver");
-           ProyectoCiber.conexion = DriverManager.getConnection("jdbc:mysql://localhost/ciber", "root","" );
-            VentanaPrincipal vp = new VentanaPrincipal();
-            vp.setVisible(true);
+        VentanaPrincipal vp = new VentanaPrincipal();
+        vp.setVisible(true);
             vp.ingresar();
-            
-            
-        } catch (SQLException ex) {
-              JOptionPane.showMessageDialog(null, ex.getMessage());
-            }
-         catch (ClassNotFoundException ex) {
-            JOptionPane.showMessageDialog(null, "libreria no agregada");
-            
-        }
+        
+        
     }
 
    
