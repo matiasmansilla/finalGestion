@@ -173,7 +173,7 @@ public class VentanaVenta extends javax.swing.JDialog {
                 jButton7ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 90, 120, 40));
+        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 90, 130, 40));
 
         jPanel5.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 605, 145));
 
